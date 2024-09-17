@@ -18,7 +18,7 @@ const Header = () => {
               <NavLink href="#about" className="text-white hvr-underline-from-center">ABOUT</NavLink>
               <NavLink href="#skills" className="text-white hvr-underline-from-center">SKILLS</NavLink>
               <NavLink href="#projects" className="text-white hvr-underline-from-center">PROJECTS</NavLink>
-              <NavLink href={resume} target='_blank'  ><Button className='btn btn-success' style={{borderRadius:'20px',marginTop:'-5px'}}>Resume</Button></NavLink>
+              <NavLink href={resume} target='_blank'><Button className='btn btn-success' style={{borderRadius:'20px',marginTop:'-5px'}}>Resume</Button></NavLink>
               
             </Nav>
           </NavbarCollapse>
