@@ -243,12 +243,15 @@ h3{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   padding: 1.5rem;
-  height: 250px; /* Adjust height based on your design preference */
+  min-height: 250px; /* Adjust height based on your design preference */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
+.darkbg{
+  background-color: black;
+  color: white;
+}
 .project-details {
   text-align: center;
 }
@@ -256,13 +259,16 @@ h3{
 .project-title {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #dd3b3b;
   margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #ff6a00, #ee0979); /* Define your gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
 
 .project-description {
   font-size: 1rem;
-  color: #666;
+  color: #131010;
   text-align: start;
 }
 
@@ -284,5 +290,5 @@ h3{
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   background-color: black;
-  color: white!important;
+  
 }

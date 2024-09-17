@@ -19,6 +19,8 @@ const projects = [
     id: 1, 
     title: 'Nehru Zoological Park', 
     description: 'Developed web services for mobile app integration, including ticket booking and donation services.', 
+    company: 'Centre for Good Governance', 
+    year: '2023 - Present', 
     skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Java', 'Spring'],
     url: 'https://nzptsfd.telangana.gov.in' 
   },
@@ -26,10 +28,11 @@ const projects = [
     id: 2, 
     title: 'Financial Management System', 
     description: 'Worked on GST reporting and budget management for the Telangana State Civil Supplies Corporation.', 
+    company: 'Centre for Good Governance', // Added company
+    year: '2021 - 2023', // Added year
     skills: ['HTML', 'CSS', 'JavaScript',  'Java',  'PostgreSQL'],
     url: 'https://tgcslfms.cgg.gov.in' 
   },
-  
 ];
 
 export const Projects = () => {
@@ -45,7 +48,7 @@ export const Projects = () => {
 
         <Row className="justify-content-start">
           {projects.map(project => (
-            <Col xs={12} md={6} lg={6} key={project.id} className="mb-4">
+            <Col xs={12} md={6} lg={6} key={project.id} className="mt-5">
               <div className="project-item">
                 <div className="project-header ">
                   <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-link">
@@ -53,8 +56,9 @@ export const Projects = () => {
                   </a>
                 </div>
                 <div className="project-details">
-                  <h4 className="project-title">{project.title}</h4>
-                  <p className="project-description">{project.description}</p>
+                  <h4 className="project-title fs-3">{project.title}</h4>
+                  <p className="fw-bold" style={{color:'#992f8c'}}>{project.company} | {project.year}</p> 
+                  <p className="project-description text-secondary">{project.description}</p>
                 </div>
                 <div className="project-skills">
                   {project.skills.map(skill => skillsIcons[skill])}
