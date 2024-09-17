@@ -1,0 +1,288 @@
+
+
+
+
+.informationbg{
+  height: auto;
+  background-image: url('./assets/images/background.png');
+  background-size: cover; 
+  background-position: center;
+  background-blend-mode: lighten;
+}
+
+@media (max-width: 767px) {
+  .informationbg {
+    height: auto;
+   
+  }
+
+
+
+  .developer-gif {
+    width: 100%; 
+  }
+}
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffcc00;
+}
+
+/* Ensure the header sticks to the top of the viewport */
+.navbar {
+
+  z-index: 1000; 
+  height: auto;
+  top: 0;
+}
+#about,
+#home,
+#skills,
+#projects {
+  padding-top: 80px; /* Adjust this value to match the height of your sticky header */
+}
+.hvr-underline-from-center::before {
+  background-color: #be8427 !important;
+}
+
+
+
+.icon-wrapper {
+
+  border-radius: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-icon {
+  background-color: #25D366;
+}
+
+.linkedin-icon {
+  background-color: #0A66C2;
+}
+
+.github-icon {
+  background-color: #333;
+}
+
+.icon-wrapper:hover {
+  opacity: 0.8;
+}
+
+.developer-gif {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-size: 85px !important;
+  font-weight: bold!important;
+}
+h3{
+  font-style: italic;
+}
+
+
+.profilepic img {
+ height:auto;
+ width: 100%;
+  border-radius: 8px; 
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #2c3e50; /* Darker color for strong contrast */
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.heading::after {
+  content: "";
+  width: 80px;
+  height: 5px;
+  background-color: #3498db; /* Light blue line under heading */
+  display: block;
+  margin: 0.5rem auto 0;
+  border-radius: 5px;
+}
+
+
+.html-icon {
+  color: #E34F26; /* HTML color */
+}
+
+.css-icon {
+  color: #1572B6; /* CSS color */
+}
+
+.js-icon {
+  color: #F7E018; /* JavaScript color */
+}
+
+.react-icon {
+  color: #61DAFB; /* React color */
+}
+
+.java-icon {
+  color: #007396; /* Java color */
+}
+
+.spring-icon {
+  color: #6DB33F; /* Spring Boot color */
+}
+
+.sql-icon {
+  color: #003B57; /* SQL color */
+}
+
+.postgresql-icon {
+  color: #336791; /* PostgreSQL color */
+}
+
+
+
+.skills-category {
+ 
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.skills-container{
+  background-color: black;
+  margin-top: 30px;
+  color: white;
+}
+
+.skills-subheading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #fbf6f6;
+  text-align: center;
+}
+
+.skill-item {
+  text-align: center;
+  padding: 1.5rem;
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background-color: #eaf0f6;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  width: 150px; /* Fixed width */
+  height: 150px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Centering the items */
+}
+
+
+
+.skill-item p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.skill-item svg {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item:hover svg {
+  color: #3498db; /* Change icon color on hover */
+  transform: rotate(15deg);
+}
+
+
+
+.footer {
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40; /* Dark background color */
+  color: #ffffff; /* White text color */
+  text-align: center; /* Centered text */
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.projects-container {
+  background: #fefcff;
+  color: #ffffff;
+  padding: 4rem 0;
+}
+
+
+
+
+.project-item {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  padding: 1.5rem;
+  height: 250px; /* Adjust height based on your design preference */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-details {
+  text-align: center;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #dd3b3b;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #666;
+  text-align: start;
+}
+
+.project-skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  background: #f8f9fa;
+  border-top: 1px solid #e9ecef;
+}
+
+.skill-icon {
+  color: #333;
+  margin: 0.5rem;
+}
+
+.project-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  color: white!important;
+}
