@@ -7,7 +7,10 @@
   background-image: url('./assets/images/background.png');
   background-size: cover; 
   background-position: center;
-  background-blend-mode: lighten;
+  background-blend-mode: darken;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 @media (max-width: 767px) {
@@ -38,10 +41,14 @@
   top: 0;
 }
 #about,
-#home,
 #skills,
 #projects {
-  padding-top: 80px; /* Adjust this value to match the height of your sticky header */
+  padding-top: 80px; 
+
+}
+#home{
+  padding-top: 70px; 
+  margin-top: -80px; 
 }
 .hvr-underline-from-center::before {
   background-color: #be8427 !important;
