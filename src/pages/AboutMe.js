@@ -4,7 +4,7 @@ import { Col, Container, Row } from "react-bootstrap";
 
 export const AboutMe = () => {
   return (
-    <div className="about" id="about">
+    <div className="about" id="about" >
       <Container className="mt-5">
         <h2
           className="heading"
