@@ -3,7 +3,7 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import developerGif from '../assets/images/devguy3.gif';
 import { Typewriter } from 'react-simple-typewriter';
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link} from 'react-scroll';
 
 const Information = () => {
     return (
