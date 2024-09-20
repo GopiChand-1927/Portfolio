@@ -14,16 +14,12 @@ html {
 }
 
 @media (max-width: 767px) {
-  .informationbg {
-    height: auto;
-   
-  }
-
 
 
   .developer-gif {
-    width: 100%; 
+    width: 80%; 
   }
+  
 }
 .nav-link {
   transition: color 0.3s ease;
@@ -37,18 +33,16 @@ html {
 .navbar {
 
   z-index: 1000; 
-  height: auto;
-  top: 0;
 }
 #about,
 #skills,
-#projects {
+#projects ,#contact{
   padding-top: 80px; 
 
 }
 #home{
-  padding-top: 70px; 
-  margin-top: -80px; 
+  padding-top: 80px; 
+  margin-top: -70px; 
 }
 .hvr-underline-from-center::before {
   background-color: #be8427 !important;
@@ -105,7 +99,7 @@ h3{
 .heading {
   font-size: 3rem;
   font-weight: 700;
-  color: #2c3e50; /* Darker color for strong contrast */
+  color: #2c3e50; 
   text-align: center;
   margin-bottom: 1.5rem;
   position: relative;
@@ -116,7 +110,7 @@ h3{
   content: "";
   width: 80px;
   height: 5px;
-  background-color: #3498db; /* Light blue line under heading */
+  background-color: #3498db; 
   display: block;
   margin: 0.5rem auto 0;
   border-radius: 5px;
@@ -312,9 +306,7 @@ h3{
   color: #333;
 }
 
-.contactform .form-control {
-  border-radius: 4px;
-}
+
 
 .contact-button {
   border-radius: 4px;
@@ -322,27 +314,11 @@ h3{
   font-size: 1rem;
 }
 
-.contact-details {
-  border-top: 2px solid #ddd;
-  padding-top: 20px;
-}
 
-.contact-details h3 {
-  font-size: 1.75rem;
-  color: #333;
-}
 
-.contact-details a {
-  font-size: 1.25rem;
-  color: #333;
-  text-decoration: none;
-}
 
-.contact-details a:hover {
-  text-decoration: underline;
-}
 
-.text-primary {
-  color: #007bff;
-}
+
+
+
 

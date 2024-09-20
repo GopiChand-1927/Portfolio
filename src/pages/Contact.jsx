@@ -5,7 +5,7 @@ import { useForm } from '@formspree/react';
 import * as Yup from 'yup';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import Swal from 'sweetalert2';
-import { FaEnvelope, FaPhone } from 'react-icons/fa'; // Updated import
+import { FaEnvelope, FaPhone } from 'react-icons/fa'; 
 
 const initialValues = {
   name: '',
@@ -71,7 +71,7 @@ export const Contact = () => {
             </h2>
             <Form className="container contactform">
               <Row className='mt-5'>
-                <Col md={6}>
+                <Col md={6} className="mb-3 mb-md-0">
                   <Field
                     id="name"
                     name="name"
@@ -140,11 +140,11 @@ export const Contact = () => {
               <Row className="justify-content-center">
                 <Col md={4} className="d-flex align-items-center mb-3">
                   <FaEnvelope size="2em" className="me-3 text-danger" />
-                  <a href="mailto:gopichandbhukya1999@gmail.com" className="text-dark">gopichandbhukya1999@gmail.com</a>
+                  gopichandbhukya1999@gmail.com
                 </Col>
-                <Col md={4} className="d-flex align-items-center">
+                <Col md={4} className="d-flex align-items-right">
                   <FaPhone size="2em" className="me-3 text-primary" />
-                  <a href="tel:+1234567890" className="text-dark">+91-7036830616</a>
+                  +91-7036830616
                 </Col>
               </Row>
             </div>

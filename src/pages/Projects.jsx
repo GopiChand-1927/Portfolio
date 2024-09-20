@@ -48,7 +48,7 @@ export const Projects = () => {
 
         <Row className="justify-content-start">
           {projects.map(project => (
-            <Col xs={12} md={6} lg={6} key={project.id} className="mt-5">
+            <Col xs={12} md={6} lg={6} key={project.id} className="mt-5" data-aos="fade-up">
               <div className="project-item">
                 <div className="project-header ">
                   <a href={project.url} target="_blank" rel="noopener noreferrer" className="project-link">
@@ -58,7 +58,7 @@ export const Projects = () => {
                 <div className="project-details">
                   <h4 className="project-title fs-3">{project.title}</h4>
                   <p className="fw-bold" style={{color:'#992f8c'}}>{project.company} | {project.year}</p> 
-                  <p className="project-description text-secondary">{project.description}</p>
+                  <p className="project-description text-secondary" >{project.description}</p>
                 </div>
                 <div className="project-skills">
                   {project.skills.map(skill => skillsIcons[skill])}
